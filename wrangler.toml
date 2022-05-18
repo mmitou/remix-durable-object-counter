@@ -1,0 +1,7 @@
+name = "remix-simple-chat"
+main = "dist/index.mjs"
+workers_dev = true
+compatibility_date = "2022-05-18"
+
+[site]
+bucket = "./public"
