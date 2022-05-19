@@ -1,4 +1,4 @@
-name = "remix-simple-chat"
+name = "remix-durable-object-counter"
 main = "dist/index.mjs"
 workers_dev = true
 compatibility_date = "2022-05-18"

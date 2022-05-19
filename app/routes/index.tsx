@@ -37,13 +37,13 @@ export const action: ActionFunction = async ({
 };
 
 export default function Index() {
-  let count = useLoaderData();
+  const count = useLoaderData();
   const actionData = useActionData();
 
   return (
     <div>
       <h1>Welcome to Remix on cloudflare workers!</h1>
-      <div>Counter: {JSON.stringify(count)}</div>
+      <div>count: {count}</div>
       {actionData && <div>action result: {actionData}</div>}
 
       <Form method="post">
