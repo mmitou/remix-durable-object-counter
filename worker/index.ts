@@ -3,6 +3,7 @@ import * as build from "../build";
 //@ts-ignore
 import assetJson from "__STATIC_CONTENT_MANIFEST";
 import type { ServerBuild } from "@remix-run/server-runtime";
+import { Counter } from "./counter";
 
 const fetch = createFetch({
   build: build as unknown as ServerBuild,
@@ -18,3 +19,5 @@ const fetch = createFetch({
 export default {
   fetch,
 };
+
+export { Counter };

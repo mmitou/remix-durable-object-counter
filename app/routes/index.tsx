@@ -42,9 +42,9 @@ export default function Index() {
 
   return (
     <div>
-      <h1>Welcome to Remix</h1>
+      <h1>Welcome to Remix on cloudflare workers!</h1>
       <div>Counter: {JSON.stringify(count)}</div>
-      {actionData && <h1>action result: {actionData}</h1>}
+      {actionData && <div>action result: {actionData}</div>}
 
       <Form method="post">
         <button type="submit">increment</button>
