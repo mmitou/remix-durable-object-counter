@@ -1,19 +1,13 @@
 import { createFetch } from "remix-cloudflare-workers-fetch";
-import * as build from "../build";
+import type { ServerBuild } from "remix-cloudflare-workers-fetch";
 //@ts-ignore
 import assetJson from "__STATIC_CONTENT_MANIFEST";
-import type { ServerBuild } from "@remix-run/server-runtime";
+import * as build from "../build";
 import { Counter } from "./counter";
 
 const fetch = createFetch({
   build: build as unknown as ServerBuild,
   assetJson,
-  mode: "production",
-  options: {
-    cacheControl: {
-      bypassCache: true,
-    },
-  },
 });
 
 export default {

@@ -1,6 +1,6 @@
 {
   "name": "remix-durable-object-counter",
-	"version": "1.0.0",
+  "version": "1.0.0",
   "private": true,
   "description": "",
   "license": "",
@@ -25,7 +25,7 @@
     "cross-env": "^7.0.3",
     "react": "^18.1.0",
     "react-dom": "^18.1.0",
-    "remix-cloudflare-workers-fetch": "^1.0.4"
+    "remix-cloudflare-workers-fetch": "^1.0.5"
   },
   "devDependencies": {
     "@cloudflare/workers-types": "^3.10.0",
