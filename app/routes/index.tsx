@@ -33,7 +33,7 @@ export const action: ActionFunction = async ({
   const resp = await obj.fetch(`${url.origin}/increment`);
   const count = await resp.text();
 
-  return count;
+  return json(count);
 };
 
 export default function Index() {
@@ -43,6 +43,7 @@ export default function Index() {
   return (
     <div>
       <h1>Welcome to Remix on cloudflare workers!</h1>
+
       <div>count: {count}</div>
       {actionData && <div>action result: {actionData}</div>}
 
